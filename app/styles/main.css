@@ -1,0 +1,532 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  display: block;
+  font-weight: lighter;
+  padding: 0px;
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  background-color: #F5F5F5;
+  background-size: cover;
+  background-position: center center;
+}
+.item {
+  position: relative;
+ 
+}
+
+#canvas {
+  padding-top: 100px;
+}
+
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+.form-style-6 {
+  font: 95%;
+  max-width: 400px;
+  margin: 10px auto;
+  background: #F7F7F7;
+}
+.form-style-6 h1 {
+  background: #e6e6e6;
+  padding: 20px 0;
+  font-size: 140%;
+  font-weight: 300;
+  text-align: center;
+  color: #494C4E;
+  margin: -16px -16px 16px -16px;
+}
+.form-style-6 input[type="text"], .form-style-6 input[type="date"], .form-style-6 input[type="datetime"], .form-style-6 input[type="email"], .form-style-6 input[type="number"], .form-style-6 input[type="search"], .form-style-6 input[type="time"], .form-style-6 input[type="url"], .form-style-6 textarea, .form-style-6 select {
+  -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+  outline: none;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  width: 100%;
+  background: #fff;
+  margin-bottom: 4%;
+  border: 1px solid #ccc;
+  padding: 3%;
+  color: #555;
+  font: 95%;
+}
+.form-style-6 input[type="text"]:focus, .form-style-6 input[type="date"]:focus, .form-style-6 input[type="datetime"]:focus, .form-style-6 input[type="email"]:focus, .form-style-6 input[type="number"]:focus, .form-style-6 input[type="search"]:focus, .form-style-6 input[type="time"]:focus, .form-style-6 input[type="url"]:focus, .form-style-6 textarea:focus, .form-style-6 select:focus {
+  box-shadow: 0 0 5px #43D1AF;
+  padding: 3%;
+  border: 1px solid #43D1AF;
+}
+.form-style-6 input[type="submit"], .form-style-6 input[type="button"] {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  width: 100%;
+  padding: 3%;
+  background: #e6e6e6;
+  border-bottom: 2px solid #e6e6e6;
+  border-top-style: none;
+  border-right-style: none;
+  border-left-style: none;
+  color: #DC143C;
+}
+.form-style-6 input[type="submit"]:hover, .form-style-6 input[type="button"]:hover {
+  color: #fff;
+  background: #DC143C;
+}
+.wrapper {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(323deg, #21ffc6, #6359f0, #f06159);
+
+background-size: 400% 400%;
+-webkit-animation: AnimationName 12s ease infinite;
+-moz-animation: AnimationName 12s ease infinite;
+-o-animation: AnimationName 12s ease infinite;
+animation: AnimationName 12s ease infinite;
+}
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 7%}
+    50%{background-position:100% 94%}
+    100%{background-position:0% 7%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 7%}
+    50%{background-position:100% 94%}
+    100%{background-position:0% 7%}
+}
+@-o-keyframes AnimationName {
+    0%{background-position:0% 7%}
+    50%{background-position:100% 94%}
+    100%{background-position:0% 7%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 7%}
+    50%{background-position:100% 94%}
+    100%{background-position:0% 7%}
+  }
+svg {
+  font-weight: 400;
+  position: absolute;
+  font: 5em Open Sans;
+  letter-spacing: 0.15em;
+  width: 100%;
+  height: 50%;
+  margin-top: 5%;
+}
+
+svg text {
+  fill: #111;
+  stroke: #111;
+  fill-opacity: 1;
+  stroke-width: 0;
+  stroke-dasharray: 100% 0;
+
+  animation: stroke-offset 5s ease-in-out;
+}
+.two {
+  font: 4em Open Sans;
+}
+@keyframes stroke-offset {
+  0% {
+    fill-opacity: 0;
+    stroke-width: 0;
+    stroke-dasharray: 0% 100%;
+  }
+  25% {
+    stroke-width: 3px;
+  }
+  50% {
+    fill-opacity: 0;
+  }
+  75% {
+    stroke-width: 3px;
+  }
+  100% {
+    stroke-width: 0;
+  }
+}
+
+h1 {
+  position: absolute;
+  letter-spacing: 5px;
+  font-size: 75px;
+  height: 40%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+h2 {
+  position: absolute;
+  letter-spacing: 5px;
+  font-size: 50px;
+  height: 50%;
+  width: 100%;
+  padding-top: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+li {
+  font-size: 15px;
+}
+@media only screen 
+and (min-device-width : 860px) 
+and (max-device-width : 1366px) {
+  svg {
+  font-weight: 400;
+  position: absolute;
+  font: 4em Open Sans;
+  letter-spacing: 0.15em;
+  width: 100%;
+  height: 50%;
+  margin-top: 5%;
+}
+  .two {
+  font: 3em Open Sans;
+}
+  }
+@media (max-width: 860px) {
+
+svg {
+  font-weight: 400;
+  position: absolute;
+  font: 4em Open Sans;
+  letter-spacing: 0.15em;
+  width: 100%;
+  height: 50%;
+  margin-top: 5%;
+}
+  .two {
+  font: 3em Open Sans;
+}
+  h1{
+    font-size: 50px;
+
+  }
+  h2 {
+    font-size:30px;
+  }
+    #canvas {
+    top: 60px;
+  }
+}
+@media (max-width: 600px) {
+  h1 {
+    font-size: 30px;
+  }
+  h2 {
+    font-size: 20px;
+    padding-top: 40px;
+  }
+  #canvas {
+    top: 20px;
+  }
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: #494C4E;
+}
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
+  color: #DC143C;
+}
+.container-full {
+  margin: 0 auto;
+  width: 100%;
+}
+.contact-image {
+  align-self: baseline;
+  float: left;
+  display: inline-block;
+}
+.footer-image {
+  width: 100%;
+  margin: 0 auto;
+}
+.title {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: #DC143C;
+  letter-spacing: 2px;
+}
+.main {
+  border-style: none;
+
+}
+.project {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  background-color: #e6e6e6;
+}
+.home {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background: url('home_small.jpg');
+  background-size: cover;
+  background-position: center center;
+}
+.outro {
+  padding-top: 20px;
+}
+.form {
+  padding-top: 30px;
+}
+div.hover-div {}
+div.hover-div:hover .element {
+  display: block;
+}
+div.hover-div:hover img {
+  opacity: 0.3;
+}
+.hover-text {
+  color: #000;
+  display: none;
+  clear: both;
+  font-size: 20px;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transform: translateX(-50%) translateY(-50%);
+  background: rgba(0, 0, 0, 0.0);
+  position: absolute;
+  z-index: 2;
+}
+.element {
+  position: absolute;
+  z-index: 2;
+  text-decoration: none;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  padding: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-transition: color 1s ease;
+  -moz-transition: color 1s ease;
+  -ms-transition: color 1s ease;
+  -o-transition: color 1s ease;
+  transition: color 1s ease;
+}
+.element:hover, .element:focus {
+  outline: 0;
+  color: #DC143C;
+  -webkit-transition: color 1s ease;
+  -moz-transition: color 1s ease;
+  -ms-transition: color 1s ease;
+  -o-transition: color 1s ease;
+  transition: color 1s ease;
+  cursor: pointer;
+}
+.element:before {
+  -webkit-transition: all 1s ease;
+  /* add delay if wanted */
+  -moz-transition: all 1s ease;
+  /* add delay if wanted */
+  -ms-transition: all 1s ease;
+  /* add delay if wanted */
+  -o-transition: all 1s ease;
+  /* add delay if wanted */
+  transition: all 1s ease;
+  /* add delay if wanted */
+}
+.element:after {
+  -webkit-transition: all 1s ease;
+  /* add delay if wanted */
+  -moz-transition: all 1s ease;
+  /* add delay if wanted */
+  -ms-transition: all 1s ease;
+  /* add delay if wanted */
+  -o-transition: all 1s ease;
+  /* add delay if wanted */
+  transition: all 1s ease;
+  /* add delay if wanted */
+}
+.element:hover:after, .element:focus:after {
+  outline: 0;
+  background-color: #DC143C;
+  -webkit-transition: all 1s ease;
+  /* add delay if wanted */
+  -moz-transition: all 1s ease;
+  /* add delay if wanted */
+  -ms-transition: all 1s ease;
+  /* add delay if wanted */
+  -o-transition: all 1s ease;
+  /* add delay if wanted */
+  transition: all 1s ease;
+  /* add delay if wanted */
+}
+.element:hover:before, .element:focus:before {
+  outline: 0;
+  background-color: #DC143C;
+  -webkit-transition: all 1s ease;
+  /* add delay if wanted */
+  -moz-transition: all 1s ease;
+  /* add delay if wanted */
+  -ms-transition: all 1s ease;
+  /* add delay if wanted */
+  -o-transition: all 1s ease;
+  /* add delay if wanted */
+  transition: all 1s ease;
+  /* add delay if wanted */
+}
+.underline-right:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 1px;
+  height: 1%;
+}
+.underline-right:hover:after {
+  width: 100%;
+  height: 2%;
+}
+.underline-right:after {
+  left: 0;
+  bottom: 0;
+}
+
+/* Pop */
+
+@-webkit-keyframes hvr-pop {
+  50% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+}
+@keyframes hvr-pop {
+  50% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+}
+.hvr-pop {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+}
+.hvr-pop:hover, .hvr-pop:focus, .hvr-pop:active {
+  -webkit-animation-name: hvr-pop;
+  animation-name: hvr-pop;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+
+.about {
+    padding-top: 40px;
+    
+  }
+  h4 {
+    letter-spacing: .5px;
+  }
+/* Everything but the jumbotron gets side spacing for mobile first views */
+
+.header, .marketing, .footer {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Custom page header */
+
+.header {
+  margin-bottom: 10px;
+}
+
+/* Make the masthead heading the same height as the navigation */
+
+.header h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px;
+  padding-bottom: 19px;
+}
+
+/* Custom page footer */
+
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+.container-narrow>hr {
+  margin: 30px 0;
+}
+
+/* Main marketing message and sign up button */
+
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+}
+.jumbotron .btn {
+  font-size: 21px;
+  padding: 14px 24px;
+}
+
+.marketing {
+  margin: 40px 0;
+}
+.marketing p+h4 {
+  margin-top: 28px;
+}
+@media screen and (max-width: 768px) {
+  .main {
+    border-style: none;
+  }
+  .about {
+    margin: 10px;
+    padding-top: 20px;
+
+  }
+  .home {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-size: cover;
+    background-position: center center;
+  }
+  .underline-right:hover:after {
+    width: 20%;
+    height: 2%;
+  }
+}
+
+/* Responsive: Portrait tablets and up */
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+  /* Remove the padding we set earlier */
+  .header, .marketing, .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  /* Space out the masthead */
+  .header {}
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+}

@@ -1,0 +1,18 @@
+<div class="container">
+<section class="project row project-{{name}}" ng-repeat="(name, details) in  project.projects">
+	<div class="col-md-12 project-img">
+	<div class="hover-div">
+	<a href={{details.projectView}} target="_blank">
+		<img src={{details.img}} width='100%' height='50%' alt="project image">
+
+			<div class="hover-text element underline-right">{{project.link}}
+			</div>
+	</div>
+	</div>
+	<div class="col-md-12 project">
+
+ 		<div class="title" >{{name}} </div>
+		<p> {{details.info}}</p>
+	</div>
+</section>
+</div>
